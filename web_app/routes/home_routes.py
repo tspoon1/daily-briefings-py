@@ -7,8 +7,8 @@ home_routes = Blueprint("home_routes", __name__)
 @home_routes.route("/")
 def index():
     print("VISITED THE HOME PAGE")
-    #return render_template("dashboard.html")
-    return "Welcome Home (TODO)"
+    return render_template("home.html")
+    #return "Welcome Home (TODO)"
 
 @home_routes.route("/about")
 def about():
